@@ -14,7 +14,7 @@ const handler = async (req: NextRequest): Promise<Response> => {
   const apiKey = openaiApiKey ?? process.env.OPENAI_API_KEY;
 
   if (!apiKey) {
-    return new Response("Missing OpenAI API key", { status: 400 });
+    return new Response("Missing OpenAI API key, pass in the key or set one up in environment variable OPENAI_API_KEY", { status: 400 });
   }
 
   if (!prompt) {
@@ -37,7 +37,7 @@ const handler = async (req: NextRequest): Promise<Response> => {
     n: 1,
   };
 
-  const stream = await OpenAIStream(payload, apiKey);
+  const stream = await OpenAIStream(payload);
   return new Response(stream);
 };
 
