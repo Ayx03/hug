@@ -144,17 +144,22 @@ export default function Home() {
             
           </section>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          <p className='text-xs opacity-70 fixed p-5 text-black dark:text-white bottom-0'>made by <a rel='noopener noreferrer' target={'_blank'} href="https://ekar.site/">ekar</a><span className='mr-2 ml-2'>|</span>
-          <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs' href='https://github.com/Ekarmore/hug' target={'_blank'}>Github</a></p>
-          <p className='text-xs opacity-70 fixed p-5 text-black dark:text-white bottom-0'> | moded & hosted by <a rel='noopener noreferrer' target={'_blank'} href="https://ablo.ga/">ImAyx</a><span className='mr-2 ml-2'>|</span>
-          <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs' href='https://github.com/Ayx03/hug' target={'_blank'}>GitHub Repository</a></p>
-        </motion.div>
-
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="flex justify-center items-center">
+              <p className='text-xs opacity-70 text-black dark:text-white'>made by <a rel='noopener noreferrer' target='_blank' href="https://ekar.site/">ekar</a></p>
+              <span className='mr-2 ml-2 opacity-70 text-black dark:text-white'>|</span>
+              <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs opacity-70 text-black dark:text-white' href='https://github.com/Ekarmore/hug' target='_blank'>GitHub Repository</a>
+            </div>
+            <div className="flex justify-center items-center">
+              <p className='text-xs opacity-70 text-black dark:text-white'>moded & hosted by <a rel='noopener noreferrer' target='_blank' href="https://ablo.ga/">ImAyx</a></p>
+              <span className='mr-2 ml-2 opacity-70 text-black dark:text-white'>|</span>
+              <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs opacity-70 text-black dark:text-white' href='https://github.com/Ayx03/hug' target='_blank'>GitHub Repository</a>
+            </div>
+          </motion.div>
       </main>
     </>
   )
