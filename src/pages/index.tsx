@@ -150,7 +150,9 @@ export default function Home() {
           transition={{ duration: 0.5 }}
         >
           <p className='text-xs opacity-70 fixed p-5 text-black dark:text-white bottom-0'>made by <a rel='noopener noreferrer' target={'_blank'} href="https://ekar.site/">ekar</a><span className='mr-2 ml-2'>|</span>
-          <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs' href='https://github.com/Ekarmore/hug' target={'_blank'}>Github</a></p>
+          <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs' href='https://github.com/Ekarmore/hug' target={'_blank'}>Github</a></p><br>
+          <p className='text-xs opacity-70 fixed p-5 text-black dark:text-white bottom-0'>moded & hosted by <a rel='noopener noreferrer' target={'_blank'} href="https://ablo.ga/">ImAyx</a><span className='mr-2 ml-2'>|</span>
+          <a rel='noopener noreferrer' className='border-b border-dashed hover:opacity-70 transition-all text-xs' href='https://github.com/Ayx03/hug' target={'_blank'}>Github</a></p>
         </motion.div>
       </main>
     </>
